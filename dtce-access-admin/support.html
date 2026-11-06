@@ -12,11 +12,14 @@
 <h1>DTCE Tool Kit Access Admin Support</h1>
 <p>Email <a href="mailto:developer@dtce.online">developer@dtce.online</a> for help with the native iPhone access-code generator.</p>
 <h2>Requirements and installation</h2>
-<p>The app requires iOS 16 or later, an iPhone with enrolled Face ID, and a compatible encrypted mobile signing-key export from an authorized Windows DTCE administrator. Installation is available through the download link supplied by DTCE when an approved release is available.</p>
+<p>The app requires iOS 16 or later. Generating real approvals requires an iPhone with enrolled Face ID and a compatible encrypted mobile signing-key export from an authorized Windows DTCE administrator. Demo mode can be explored without importing a key. Installation is available through the download link supplied by DTCE when an approved release is available.</p>
 <p>Unlisted App Store distribution uses a direct download link rather than App Store search. Anyone with the link may download the app; generating working approvals still requires a matching administrator key and Face ID.</p>
 <h2>Importing your key</h2>
 <ol><li>Keep a safe backup of your original encrypted mobile export.</li><li>Open the app and select <strong>Import your mobile key</strong>.</li><li>Choose the <code>.dtcekey</code> file in Files. The Windows <code>.dat</code> file is not the mobile export format.</li><li>Enter the export password and complete the Face ID protection steps shown in the app.</li></ol>
 <p>After import, the app saves the key in the iPhone Keychain. Reopening or returning from the background requires Face ID. A normal restart does not require a fresh key import.</p>
+<h2>Trying demo mode</h2>
+<p>Tap <strong>Try demo mode</strong> to explore program permissions, normal access and certification samples without a signing-key import. A sample request is provided. Choose <strong>Generate demo access</strong> or <strong>Generate demo certification</strong>, then copy or share the sample output if needed.</p>
+<p>Demo output starts with <code>DEMO.</code> and cannot activate Windows. The demo uses a separate temporary signing identity and does not change a saved administrator key. <strong>Exit demo mode</strong> returns to the locked normal mode and restores the previous input choices. Backgrounding or restarting also ends the demo session.</p>
 <h2>Generating approvals</h2>
 <p>For normal access, paste the complete Windows request code and select the programs to approve. Normal codes last eight hours from generation. The Windows User app requires a new approval after it is fully closed and restarted; closing a worksheet while the main app remains open retains the current session.</p>
 <p>Certification mode creates a thirty-day credential for the exact Windows version entered. Keep generated credentials private and share approvals only with their intended recipient.</p>
